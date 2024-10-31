@@ -3,25 +3,25 @@
 You don't have to set this if you deploy using heroku because you can simply set them in environment variables, also don't forget to sleep */
 
 
-const session = process.env.SESSION || '';
+const session = process.env.SESSION || 'Zokou-MD-WHATSAPP-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZUs2UWxVemxzbklhZTY0c1QyaGxYWnpieW04KzVFQmt5ekVtYmorNjRGVT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWkQyRTVpblVBYitnV2l6V2YvT2FYUi9MTVpyOENsZVN5QzNNSFNxSFUzTT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI0QzhETWVWb2lUdWdrYVd3UVFaQVp5b0xqdkFyODdlZG9GbWw2SmxaZEdZPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ3cVh2V2lxam1CTC9yMk9CZVp4OFF3QitON1JzMTlSNW11czZLRnVKdkR3PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjZDYXUweHl0Y1g0QmpGRkZQeFVFdlloL2lwbG5aY2NUb05EdFRtU1RFVVE9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkpRekRlVnZsU251aCtjT1BuOTBVWUxUeVd2UlNucHRCTFUycGlEbGh4anM9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidUNaK0FPWVFXdEg2NXlqRjByanNmU3hFejY2QlpxYzZIb0hkNWU4SXgzYz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiM3lpRDJTUzZFMVJtSytFbnFweHhWeHZ2Q3lmdVQvckNVVWJBdnpIazRXdz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlRzR0M2NG85Y2NJVFRwNGlkaTh3OUNZSFp6cXM3OHMwWXFxQ0xBbXllYWw4OWdxYmRiQ3I5WXN5ZTBVaVJodzlGTGQyR1phUWpMWmxsZUZ6Skg5Y2hnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NDcsImFkdlNlY3JldEtleSI6ImVObnhGUFM3UlRzRTBCMTZjQVRhRHBJL1VOOGVqTXNhbzlMT3hBSnNoMGc9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMiwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMyLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6IkxHRVhiS1hjUzYtX25kd0M4dEt1VFEiLCJwaG9uZUlkIjoiODliYjZmNTgtMzY1Zi00YWJjLWI2ZjctZDRmYTIzZDg5N2JlIiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InQzdGpYWGxIakNRamtRSS9uTGlkb08vRWJuYz0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJET0V1bTFqNlhlTVJnYUZXVXRiOU1HbUtlQzQ9In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiR0ZMTjdLUlAiLCJsYXN0UHJvcEhhc2giOiIzQThyRmciLCJyb3V0aW5nSW5mbyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNBSUlDQT09In0sIm1lIjp7ImlkIjoiMjIzODk1MjA5NDY6MjBAcy53aGF0c2FwcC5uZXQiLCJsaWQiOiI0MDE0MDc5NzkzMTYyMDoyMEBsaWQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ09Yd3JlRUVFTDZka0xrR0dBd2dBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6IjhDRGM2d1h0bjVxNVVJamdFMGt2THBYSnd1T2wrMzJCNnc1ZTdjSHJ6MFE9IiwiYWNjb3VudFNpZ25hdHVyZSI6Ikk4RTFoaW5vTDAvUzU3YTdSbFVyeVJtRUMveFBCQW40MHNFQlFYMUZoemFwN3hIRDhDcDBDOVJHdTBIUjQ0Sk53MmhPY0NQSUdaK1dCWUNoR3hEMkRRPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJuM0RXNlZqZ0h0UVNHRXI2TkFkZDA2bTZuVldMVkY1ay9kTWZZTXZDeTZINWFHeTBheis3WjFFdGRhaVFlOXlMdWlSaXdMU09rdGpZNmo0WW9vRjRnZz09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjIyMzg5NTIwOTQ2OjIwQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmZBZzNPc0Y3WithdVZDSTRCTkpMeTZWeWNManBmdDlnZXNPWHUzQjY4OUUifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzA0MTYzMjEsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBSzlyIn0=';
 
-const prefix = process.env.PREFIX || '.';
-const mycode = process.env.CODE || "254";
-const author = process.env.STICKER_AUTHOR || 'Keith';
-const packname = process.env.PACKNAME || 'keith';
-const dev = process.env.DEV || '254748387615';
+const prefix = process.env.PREFIX || ''';
+const mycode = process.env.CODE || "223";
+const author = process.env.STICKER_AUTHOR || 'Devi';
+const packname = process.env.PACKNAME || 'Sympa';
+const dev = process.env.DEV || '22389520946';
 const DevDreaded = dev.split(",");
 const botname = process.env.BOTNAME || 'KEITH-MD';
 const mode = process.env.MODE || 'public';
 const gcpresence = process.env.GC_PRESENCE || 'false';
-const antionce = process.env.ANTIVIEWONCE || 'true';
+const antionce = process.env.ANTIVIEWONCE || 'false';
 const sessionName = "session";
-const presence = process.env.WA_PRESENCE || 'online';
+const presence = process.env.WA_PRESENCE || '';
 
-const antitag = process.env.ANTITAG || 'true';
-const antidelete = process.env.ANTIDELETE || 'true';
-const autoview = process.env.AUTOVIEW_STATUS || 'true';
-const autoread = process.env.AUTOREAD || 'true';
+const antitag = process.env.ANTITAG || 'false';
+const antidelete = process.env.ANTIDELETE || 'false';
+const autoview = process.env.AUTOVIEW_STATUS || 'false';
+const autoread = process.env.AUTOREAD || 'false';
 const autobio = process.env.AUTOBIO || 'false';
 
 module.exports = {
